@@ -1,0 +1,165 @@
+
+
+
+.Principal{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
+.crearPublicacion{
+    margin-top: 30px;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid tomato;
+    align-items: center;
+    background-color: white;
+    
+}
+
+/* Estilos para las publicaciones*/
+
+.Publicacion{
+    margin-top: 30px;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.form{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(189, 187, 187);
+    
+}
+
+.form input{
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 236, 236);
+
+}
+
+.infoComment input{
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(240, 236, 236);
+}
+
+.imgProfile{
+    margin:10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.envioForm{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btn{
+    background-color: tomato;
+    color: white;
+    margin: 10px;
+}
+
+.infopublicacion{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.infoComment{
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+}
+
+.texto{
+    margin:0;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.nombre{
+    font-weight: bold;
+}
+
+.fecha{
+    font-weight: normal;
+    color: gray;
+}
+
+.imagenPublicacion{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.imagenPublicacion img {
+    width: 100%;
+}
+
+.interacciones{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.icon{
+    font-size: 20px;
+    color: tomato;
+    cursor:pointer
+}
+
+.iconArrow{
+    font-size: 25px;
+    color: tomato;
+    cursor:pointer;
+    margin-top:5px
+}
+
+.click{
+    cursor: pointer;
+}
+
+.Like{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Comment{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgProfileComment{
+    margin:10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.Comentario{
+    background-color: rgb(231, 230, 230);
+    padding: 5px;
+    border-radius: 10px;
+}

@@ -1,0 +1,50 @@
+<div class="crearPublicacion">
+    <div class="form">
+        <img class="imgProfile" src="assets/lol.jpg" alt="">
+        <input type="text"  placeholder="  Agrega una publicación" name="" id="">
+    </div>
+    <div class="envioForm">
+        <button mat-raised-button class="btn">Publicar</button>
+    </div>
+</div>
+
+
+<div class="Publicacion" *ngFor ="let post of cantidadPublicacion">
+    <div class="infopublicacion">
+        <img class="imgProfile" src="assets/lol.jpg" alt="">
+        <div class="nombreFecha">
+            <p class="texto nombre">Julian Petersen</p>
+            <p class="texto fecha">Hace 1 hora</p>
+        </div> 
+    </div>
+    <div class="infopublicacion">
+        <p class=" texto ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repellat maiores reprehenderit nesciunt quibusdam quisquam. Recusandae cupiditate voluptate doloremque distinctio</p>
+    </div>
+    <div class="imagenPublicacion">
+        <img src="assets/Foto1.jpg" alt="">
+    </div>
+    <div class="interacciones">
+       <div class="Like">
+        <span> <mat-icon matTooltip="Me gusta" class="icon">favorite</mat-icon> </span>
+        <p class="texto ">1200</p>
+       </div> 
+       <div class="Comment">
+        <span> <mat-icon matTooltip="Comentarios" class="icon">question_answer</mat-icon> </span>
+        <p class="texto ">1200</p>
+       </div>
+    </div>
+    <div class="infoComment">
+        <img class="imgProfileComment" src="assets/lol.jpg" alt="">
+        <div class="Comentario">
+            <p class="texto nombre">Julian Petersen</p>
+            <p class="texto comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+        </div>
+    </div>
+    <div class="infoComment click">
+        <p class="texto nombre">Ver Todos los comentarios</p>
+        <span> <mat-icon class="iconArrow">arrow_drop_down</mat-icon> </span>
+    </div>
+    <div class="infoComment">
+        <img class="imgProfileComment" src="assets/lol.jpg" alt="">
+        <input type="text" class="inputComment" placeholder="  Agrega una publicación" name="" id="">
+    </div>
