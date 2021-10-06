@@ -1,0 +1,16 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.toolbar{
+    background-color: tomato;
+    color:white;
+}
+
+.buscador{
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border:none;
+
+}
