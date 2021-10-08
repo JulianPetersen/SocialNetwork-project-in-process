@@ -2,13 +2,46 @@
 <div class="contenedor">
     <div class="SideBarLeft">
         <div class="profileCard">
-            
+            <div class="background">
+                <img class = "profileImg" src="{{Users[0].imgProfile}}" alt="">
+            </div>
+            <div class="infoFollow">
+                <p class="texto">{{Users[0].nombre}} {{Users[0].apellido}}</p>
+            </div>
+            <div class="Follows">
+                <p >Seguidores</p>
+                <p >{{Users[0].seguidores}}</p>
+            </div>
+            <div class="Follows">
+                <p >Seguidores</p>
+                <p >{{Users[0].siguiendo}}</p>
+            </div>
+            <div class="linkPerfil">
+                <p >Ir al perfil</p>
+            </div>
+        </div>
+        <div class="profileCard">
+            <div class="title">
+                <h4>Amigos Sugeridos</h4>
+            </div>
+            <div class="cardSugerido" *ngFor = "let sug of sugeridos">
+                <img class="sugeridoImg" src="{{sug.imgProfile}}" alt="">
+                <h4 class="margin">{{sug.nombre}}</h4>
+            </div>
+            <div class="linkPerfil">
+                <p>Ver Todos</p>
+            </div>
         </div>
     </div>
     <div class="Principal">
         <app-publicacion></app-publicacion>
     </div>
     <div class="SideBarRigth">
-
+        <div class="profileCard" *ngFor = "num of sugeridos">
+            <div class="publicidad" >
+                <h4>Publicidad</h4>
+            </div>
+            
+        </div>
     </div>
 </div>

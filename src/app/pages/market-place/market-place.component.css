@@ -1,0 +1,80 @@
+.Container{
+    width: 100%;
+    display: flex;
+    background-color: rgb(240, 236, 236);
+}
+
+.sideBar{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.example-tree-invisible {
+    display: none;
+  }
+  
+  .example-tree ul,
+  .example-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+  
+  /*
+   * This padding sets alignment of the nested nodes.
+   */
+  .example-tree .mat-nested-tree-node div[role=group] {
+    padding-left: 40px;
+  }
+  
+  /*
+   * Padding for leaf nodes.
+   * Leaf nodes need to have padding so as to align with other non-leaf nodes
+   * under the same parent.
+   */
+  .example-tree div[role=group] > .mat-tree-node {
+    padding-left: 40px;
+  }
+
+  .Filtro{
+    margin-top: 30px;
+    background-color: rgb(240, 236, 236);
+  }
+
+
+
+  .principal{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    max-width: 200px;
+    max-height: 300px;
+  }
+  
+  .example-header-image {
+    background-image: url('/assets/lol.jpg');
+    background-size: cover;
+  }
+
+  .cardImg{
+    width: 90%;
+    
+  }
+
+  .cardTitle{
+    font-size: 15px;
+  }
+
+  .btn{
+    background-color: tomato;
+    color: white;
+    margin: 10px;
+}

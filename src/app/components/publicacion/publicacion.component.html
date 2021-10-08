@@ -1,6 +1,6 @@
 <div class="crearPublicacion">
     <div class="form">
-        <img class="imgProfile" src="assets/lol.jpg" alt="">
+        <img class="imgProfile" src="{{usuario[0].imgProfile}}" alt="">
         <input type="text"  placeholder="  Agrega una publicación" name="" id="">
     </div>
     <div class="envioForm">
@@ -9,19 +9,19 @@
 </div>
 
 
-<div class="Publicacion" *ngFor ="let post of cantidadPublicacion">
+<div class="Publicacion" *ngFor ="let post of Publicaciones">
     <div class="infopublicacion">
         <img class="imgProfile" src="assets/lol.jpg" alt="">
         <div class="nombreFecha">
-            <p class="texto nombre">Julian Petersen</p>
-            <p class="texto fecha">Hace 1 hora</p>
+            <p class="texto nombre">{{post.nombre}}</p>
+            <p class="texto fecha">{{post.tiempo}}</p>
         </div> 
     </div>
     <div class="infopublicacion">
-        <p class=" texto ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repellat maiores reprehenderit nesciunt quibusdam quisquam. Recusandae cupiditate voluptate doloremque distinctio</p>
+        <p class=" texto ">{{post.descrpicion}}</p>
     </div>
     <div class="imagenPublicacion">
-        <img src="assets/Foto1.jpg" alt="">
+        <img src="{{post.img}}" alt="">
     </div>
     <div class="interacciones">
        <div class="Like">
@@ -45,6 +45,6 @@
         <span> <mat-icon class="iconArrow">arrow_drop_down</mat-icon> </span>
     </div>
     <div class="infoComment">
-        <img class="imgProfileComment" src="assets/lol.jpg" alt="">
-        <input type="text" class="inputComment" placeholder="  Agrega una publicación" name="" id="">
+        <img class="imgProfileComment" src="{{usuario[0].imgProfile}}" alt="">
+        <input type="text" class="inputComment" placeholder="  Comentar" name="" id="">
     </div>
