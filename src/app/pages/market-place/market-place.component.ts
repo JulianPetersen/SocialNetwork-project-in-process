@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {NestedTreeControl} from '@angular/cdk/tree';
+import { ProductosService } from 'src/app/services/productos.service';
+import { MatDialog } from '@angular/material/dialog';
+import {ProductDialogComponent } from 'src/app/components/product-dialog/product-dialog.component'
 
 
 interface FoodNode {
@@ -83,17 +86,20 @@ export class MarketPlaceComponent implements OnInit {
   treeControl = new NestedTreeControl<FoodNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<FoodNode>();
 
-  productos:any[]=[1,2,3,4,5,6,7,8,9,10];
+  constructor(public Productos:ProductosService,public dialog: MatDialog) {this.dataSource.data = TREE_DATA; }
 
-
-  constructor() {
-    this.dataSource.data = TREE_DATA;
-   }
-   
+  productos = this.Productos.productos;
 
   ngOnInit(): void {
   }
 
   hasChild = (_: number, node: FoodNode) => !!node.children && node.children.length > 0;
+
+
+  openDialog() {
+    this.dialog.open(ProductDialogComponent);
+  }
 }
+
+
 

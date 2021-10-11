@@ -18,6 +18,19 @@ import {MatMenuModule} from '@angular/material/menu';
 import { MarketPlaceComponent } from './pages/market-place/market-place.component';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ProductDialogComponent } from './components/product-dialog/product-dialog.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FiltrosComponent } from './components/filtros/filtros.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+
+
+
+
+
 
 
 
@@ -28,7 +41,11 @@ import {MatCardModule} from '@angular/material/card';
     ToolbarComponent,
     HomeComponent,
     PublicacionComponent,
-    MarketPlaceComponent
+    MarketPlaceComponent,
+    ProductDialogComponent,
+    FiltrosComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -41,7 +58,13 @@ import {MatCardModule} from '@angular/material/card';
     MatMenuModule,
     MatTreeModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

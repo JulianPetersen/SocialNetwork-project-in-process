@@ -1,0 +1,32 @@
+.contenedor{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.producto p {
+    font-weight: bold;
+}
+
+.infoContacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    width: 100%;
+    background-color: tomato;
+    color: white;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}

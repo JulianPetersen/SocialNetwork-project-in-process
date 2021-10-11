@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    display: flex;
+    background-color: rgb(240, 236, 236);
+}
+
+.select{
+    margin: 20px;
+}
+
+.checks{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+}
+  
+.example-margin {
+    margin: 0 10px;
+}

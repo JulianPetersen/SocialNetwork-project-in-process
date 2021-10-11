@@ -1,5 +1,5 @@
 <app-toolbar></app-toolbar>
-
+<app-filtros></app-filtros>
 <div class="Container">
     <div class="sideBar">
         <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree Filtro">
@@ -35,16 +35,16 @@
               <div mat-card-avatar class="example-header-image"></div>
               <mat-card-title class="cardTitle">Julian Petersen</mat-card-title>
             </mat-card-header>
-            <img mat-card-image class="cardImg" src="https://http2.mlstatic.com/D_NQ_NP_872807-MLA41256444589_032020-O.webp" alt="Photo of a Shiba Inu">
+            <img mat-card-image class="cardImg" src="{{prod.imgProducto}}" alt="Photo of a Shiba Inu">
             <mat-card-content>
                 <p style="text-align: center; font-weight: bold; font-size: 20px;">
-                    $2300
+                    ${{prod.precio}}
                   </p>
                 <p>
-                Auriculares Inlamabricos
+                {{prod.descripcion}}
               </p>
             </mat-card-content>
-            <button mat-raised-button class="btn">Contactar</button>
+            <button (click)="openDialog()" mat-raised-button class="btn">Contactar</button>
           </mat-card>
     </div>
 </div>

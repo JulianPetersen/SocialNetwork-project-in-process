@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="select">
+        <mat-form-field >
+            <mat-label>Flitrar por ciudad</mat-label>
+            <mat-select disableRipple>
+              <mat-option value="1">La Plata</mat-option>
+              <mat-option value="2">Brandsen</mat-option>
+              <mat-option value="3">Buenos Aires</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="checks">
+       
+        <section class="example-section">
+            Condicion:
+            <mat-checkbox class="example-margin" [(ngModel)]="checked">Nuevo</mat-checkbox>
+            <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Usado</mat-checkbox>
+         </section>
+         <section class="example-section">
+            Envio:
+            <mat-checkbox class="example-margin" >Con envío</mat-checkbox>
+            <mat-checkbox class="example-margin" >Sin envío</mat-checkbox>
+         </section>
+            
+    </div>
+</div>
