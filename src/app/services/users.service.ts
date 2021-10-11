@@ -17,6 +17,9 @@ export class UsersService {
       imgProfile: "https://image.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg",
       seguidores: 300,
       siguiendo: 350,
+      prodPublicado: 9,
+      Calificacion: "8/10",
+      TrabajaEn: "delivery Brandsen"
     }
   ]
 

@@ -26,6 +26,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FiltrosComponent } from './components/filtros/filtros.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { MyprofileComponent } from './pages/myprofile/myprofile.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 
 
@@ -44,6 +47,8 @@ import { FormsModule } from '@angular/forms';
     MarketPlaceComponent,
     ProductDialogComponent,
     FiltrosComponent,
+    MyprofileComponent,
+    ProductCardComponent,
     
     
   ],
@@ -64,7 +69,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

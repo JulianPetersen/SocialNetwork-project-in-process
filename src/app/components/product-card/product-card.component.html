@@ -1,0 +1,18 @@
+<div class="principal">
+  <mat-card class="example-card" *ngFor =" let prod of productos">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="cardTitle">Julian Petersen</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image class="cardImg" src="{{prod.imgProducto}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+          <p style="text-align: center; font-weight: bold; font-size: 20px;">
+              ${{prod.precio}}
+            </p>
+          <p>
+          {{prod.descripcion}}
+        </p>
+      </mat-card-content>
+      <button (click)="openDialog()" mat-raised-button class="btn">Contactar</button>
+    </mat-card>
+</div>

@@ -1,0 +1,46 @@
+<app-toolbar></app-toolbar>
+
+<div class="contenedor">
+    <div class="SideBarLeft">
+        <div class="profileCard">
+            <div class="background">
+                <img class = "profileImg" src="{{Users[0].imgProfile}}" alt="">
+            </div>
+            <div class="infoFollow">
+                <p class="texto">{{Users[0].nombre}} {{Users[0].apellido}}</p>
+            </div>
+            <div class="Follows">
+                <p >Seguidores</p>
+                <p >{{Users[0].seguidores}}</p>
+            </div>
+            <div class="Follows">
+                <p >Seguidores</p>
+                <p >{{Users[0].siguiendo}}</p>
+            </div>
+            <div class="Follows">
+                <p >Productos publicados</p>
+                <p >{{Users[0].prodPublicado}}</p>
+            </div>
+            <div class="Follows">
+                <p >Trabaja en: {{Users[0].TrabajaEn}}</p>
+            </div>
+            <div class="Follows">
+                <p >Calificación vendedor</p>
+                <p >{{Users[0].Calificacion}}</p>
+            </div>
+            <div class="linkPerfil">
+                <p >Ir a la tienda de {{Users[0].nombre}}</p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="Principal">
+        <mat-tab-group>
+            <mat-tab label="Ultimas Publicaciones" > <app-publicacion></app-publicacion> </mat-tab>
+            <mat-tab label="Productos"> <app-product-card class="publicaciones"></app-product-card> </mat-tab>
+            <mat-tab label="Servicios"> <div class="servicios">
+                Este Usuario no ha publicado ningun servicio
+            </div> </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
