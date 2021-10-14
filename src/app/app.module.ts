@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { HomeComponent } from './pages/home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule,} from '@angular/common/http';
+import { AuthGuard } from './auth.guard';
+
+
 
 //Angular Material
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -29,14 +32,8 @@ import { FormsModule } from '@angular/forms';
 import { MyprofileComponent } from './pages/myprofile/myprofile.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ProductCardComponent } from './components/product-card/product-card.component';
-
-
-
-
-
-
-
-
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +46,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     FiltrosComponent,
     MyprofileComponent,
     ProductCardComponent,
+    RegisterComponent,
+    LoginComponent,
     
     
   ],
@@ -72,7 +71,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     FormsModule,
     MatTabsModule
   ],
-  providers: [],
+  providers: [AuthGuard,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

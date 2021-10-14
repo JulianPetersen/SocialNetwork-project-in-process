@@ -35,12 +35,14 @@
        
     </div>
     <div class="Principal">
-        <mat-tab-group>
-            <mat-tab label="Ultimas Publicaciones" > <app-publicacion></app-publicacion> </mat-tab>
+        <mat-tab-group class="pestañas">
+            <mat-tab label="Ultimas Publicaciones" class="pestaña"> <app-publicacion></app-publicacion> </mat-tab>
             <mat-tab label="Productos"> <app-product-card class="publicaciones"></app-product-card> </mat-tab>
-            <mat-tab label="Servicios"> <div class="servicios">
+            <mat-tab label="Servicios"> 
+                <div class="servicios">
                 Este Usuario no ha publicado ningun servicio
-            </div> </mat-tab>
+                </div> 
+        </mat-tab>
         </mat-tab-group>
     </div>
 </div>

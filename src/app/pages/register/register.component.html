@@ -1,0 +1,18 @@
+<div class="contenedor">
+    <div class="form">
+        <h1>Register</h1>
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input [(ngModel)]="user.nombre" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input [(ngModel)]="user.email" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input [(ngModel)]="user.password" matInput>
+        </mat-form-field>
+        <button (click)="singUp()" mat-raised-button color="warn">Registrarse</button>
+    </div>
+</div>
